@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.calc {
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+
+.screen {
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+}
+/* what color are the buttons/how big and changes mouse to a pointer to show that we can click buttons  */
+.calc-button {
+  background-color: #d8d9db;
+  color: black;
+  height: 100px;
+  width: 24.5%;
+  border: none;
+  border-radius: 0;
+  font-size: 40px;
+  cursor: pointer;
+}
+/* changes color for hovering and clicking buttons */
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+
+.calc-button:active {
+  background-color: #bbbcbe;
+}
+/* very cool! grabs the last-child element from each div and effects them. */
+.calc-button:last-child {
+  background-color: #df974c;
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  background-color: #dfb07e;
+}
+.calc-button:last-child:active {
+  background-color: #dd8d37;
+}
+/* In the future I would use Grid however the person what did this tutorial used this instead */
+.double {
+  width: 49.7%;
+}
+
+.tripple{
+  width: 74.8%;
+}
+
+/* makes the calculator buttons all go on there rows together */
+.calc-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
